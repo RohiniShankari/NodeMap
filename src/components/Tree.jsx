@@ -80,9 +80,9 @@ function generateNodesEdges(root) {
   function traverse(node, parentId = null) {
     if (!node) return null;
     const nodeId = idCounter++;
-    nodes.push({ id: nodeId, label: String(node.val), color: "#97C2FC" });
+    nodes.push({ id: nodeId, label: String(node.val) });
 
-    if (parentId) edges.push({ from: parentId, to: nodeId, arrows: "to", color: "#848484" });
+    if (parentId) edges.push({ from: parentId, to: nodeId, arrows: "to" });
 
     traverse(node.left, nodeId);
     traverse(node.right, nodeId);
@@ -141,19 +141,19 @@ export default function Tree() {
     const edgesDS = new DataSet(edges);
 
     const data = { nodes: nodesDS, edges: edgesDS };
-    const options = {
-      layout: { hierarchical: { direction: "UD", sortMethod: "directed" } },
-          nodes: { 
-  shape: "circle", 
-  color: "#17ae06",
-  font: { color: "#000", size: 16 },
-  size: 30,
-  borderWidth: 2,
-  borderWidthSelected: 4,
-},
-      edges: { arrows: { to: true }, color: "#848484", smooth: true, width: 2 },
-      physics: { enabled: false },
-    };
+const options = {
+  layout: { hierarchical: { direction: "UD", sortMethod: "directed" } },
+  nodes: { 
+    shape: "dot", 
+    color: "#2ae8a9", 
+    font: { color: "#000", size: 16 },
+    size: 25,
+    borderWidth: 2,
+    borderWidthSelected: 4,
+  },
+  edges: { arrows: { to: true }, color: "#848484", smooth: true, width: 2 },
+  physics: { enabled: false },
+};
 
     networkRef.current = new Network(containerRef.current, data, options);
 
