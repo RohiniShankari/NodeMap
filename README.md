@@ -1,16 +1,44 @@
-# React + Vite
+# NodeMap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive web application to **visualize graph and tree structures**. Users can experiment with tree and graph data structures, run traversals, and see animations in real-time.
+live link:https://node-map-sepia.vercel.app/
+---
+## Live Demo
+ check out the live demo here: [NodeMap Live](https://node-map-sepia.vercel.app/)
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Graph
+- Visualize directed or undirected graphs.
+- Supports BFS and DFS traversals.
+- Interactive graph controls: add edges, set start/end nodes.
+- Nodes are displayed as circles with numbers inside.
 
-## React Compiler
+### Tree
+- Build binary trees from:
+  - Preorder + Inorder
+  - Postorder + Inorder
+  - Array → Balanced BST
+- Visualize tree structure hierarchically.
+- Run **Inorder, Preorder, Postorder** traversals.
+- Nodes displayed as circles with numbers inside.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React** for frontend UI
+- **Vis.js** for graph and tree visualization
+- **Vercel** for deployment
+- **CSS** for clean and responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+### Installation
+```bash
+# Clone the repo
+git clone https://github.com/RohiniShankari/NodeMap.git
+cd NodeMap
+
+# Install dependencies
+npm install```
+
+
