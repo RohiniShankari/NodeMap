@@ -143,8 +143,15 @@ export default function Tree() {
     const data = { nodes: nodesDS, edges: edgesDS };
     const options = {
       layout: { hierarchical: { direction: "UD", sortMethod: "directed" } },
-      nodes: { shape: "box" },
-      edges: { arrows: { to: true }, color: "#848484" },
+          nodes: { 
+  shape: "circle", 
+  color: "#17ae06",
+  font: { color: "#000", size: 16 },
+  size: 30,
+  borderWidth: 2,
+  borderWidthSelected: 4,
+},
+      edges: { arrows: { to: true }, color: "#848484", smooth: true, width: 2 },
       physics: { enabled: false },
     };
 
