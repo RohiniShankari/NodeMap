@@ -1,7 +1,7 @@
 # NodeMap
 
 A modern, interactive web application to **visualize graph and tree structures**. Users can experiment with tree and graph data structures, run traversals, and see animations in real-time.
-live link:https://node-map-sepia.vercel.app/
+
 ---
 ## Live Demo
  check out the live demo here: [NodeMap Live](https://node-map-sepia.vercel.app/)
